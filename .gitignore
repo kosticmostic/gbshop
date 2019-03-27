@@ -1,3 +1,25 @@
-*.pyc
+# Created by https://www.gitignore.io
+
+### PyCharm ###
 .idea
-*.sqlite
+
+
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+### Django ###
+*.log
+*.pot
+*.pyc
+*.py[cod]
+__pycache__/
+local_settings.py
+venv
+.venv
+.env
+db.sqlite3
