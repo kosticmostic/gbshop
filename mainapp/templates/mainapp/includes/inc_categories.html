@@ -2,7 +2,12 @@
 <ul class="links-menu">
     {% for link in links_menu %}
         <li>
-            <a href="{{ link.href }}">{{ link.name }}</a>
+            <a href="{{ link.id }}"
+
+            >{{ link.name }}
+
+            </a>
+
         </li>
 
     {% endfor %}

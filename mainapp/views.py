@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpRequest
-
+from .models import ProductCategory, Product
 
 
 def main(request:HttpRequest):
@@ -11,16 +11,17 @@ def main(request:HttpRequest):
     return render(request, 'mainapp/index.html', content)
 
 
-def products(request:HttpRequest):
+def products(request:HttpRequest, pk=None):
     tittle = 'продукты'
 
-    links_menu = [
-        {'href': '#1', 'name': 'все'},
-        {'href': '#2', 'name': 'дом'},
-        {'href': '#3', 'name': 'офис'},
-        {'href': '#4', 'name': 'модерн'},
-        {'href': '#5', 'name': 'классика'},
-    ]
+    links_menu = ProductCategory.objects.all()
+    # links_menu = [
+    #     {'href': '#1', 'name': 'все'},
+    #     {'href': '#2', 'name': 'дом'},
+    #     {'href': '#3', 'name': 'офис'},
+    #     {'href': '#4', 'name': 'модерн'},
+    #     {'href': '#5', 'name': 'классика'},
+    # ]
 
     content = {
         'tittle': tittle,
