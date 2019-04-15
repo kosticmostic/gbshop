@@ -1,0 +1,27 @@
+[
+    {
+        "category": "классика",
+        "name": "Винни-Пух",
+        "price": 1000,
+        "quantity": 5
+    },
+    {
+        "category": "дом",
+        "name": "Потапыч",
+        "price": 2000,
+        "quantity": 1
+    },
+    {
+        "category": "офис",
+        "name": "office_1",
+        "price": 5000,
+        "quantity": 7
+    },
+    {
+        "category": "модерн",
+        "name": "Формула 1",
+        "price": 1000,
+        "quantity": 15,
+	"image": "products_images/moder.jpg"
+    }
+]
