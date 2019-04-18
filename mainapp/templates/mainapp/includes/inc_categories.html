@@ -1,8 +1,11 @@
 
 <ul class="links-menu">
+    <li>
+        <a href="{% url 'products:index_category' %}">все</a>
+    </li>
     {% for link in links_menu %}
         <li>
-            <a href="{{ link.id }}"
+            <a href="/products/{{ link.id }}"
 
             >{{ link.name }}
 
